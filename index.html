@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="input-container">
+        <h1>Fast Food Simulator</h1>
+
+        <div class="input">
+            <span>Cooking time (ms)</span>
+            <input type="text" id="cooking-time-input">
+        </div>
+
+        <div class="input">
+            <span>Customer arrival (ms)</span>
+            <input type="text" id="customer-arrival-time-input">
+        </div>
+
+        <button id="start-stop">Start</button>
+    </div>
+
+    <div class="block" id="order-area">
+        <h2>Order Area</h2>
+        <span>in queue: 6</span>
+        <span>new order: #12</span>
+    </div>
+
+    <div class="block" id="kitchen-area">
+        <h2>Kitchen Area</h2>
+        <span>preparing: #8</span>
+        <span>in queue: #9, #10, #11</span>
+        <span>orders: 3</span>
+    </div>
+
+    <div class="block" id="pickup-area">
+        <h2>Pickup Area</h2>
+        <span>available for pickup: #7</span>
+        <span>customers waiting: 4</span>
+    </div>
+
+    <div class="block" id="dining-area">
+        <h2>Dining Area</h2>
+        <span>population: 12</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

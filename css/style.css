@@ -1,0 +1,115 @@
+*
+{
+    --block-space: 40px;
+    font-family: 'Nobile', sans-serif;
+    box-sizing: border-box;
+}
+
+body 
+{
+    margin: 0;
+}
+
+h1 
+{
+    margin: 30px 0px 0px 0px;
+    font-size: 24px;
+}
+
+/* Input block */
+
+#input-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-container span 
+{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.input 
+{
+    width: 80%;
+    margin-top: 25px;
+}
+
+input 
+{
+    border: none;
+    background-color: #d9d9d9;
+    padding: 3px 5px 3px 5px;
+    border-radius: 0px;
+    width: 100%;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+#input-container button 
+{
+    background-color: #1EA82C;
+    color: #fff;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#input-container
+{
+    padding-bottom: var(--block-space);
+}
+
+/* Area blocks */
+
+#order-area
+{
+    background-color: #CD6949;
+}
+
+.block 
+{
+    padding-top: var(--block-space);
+    padding-bottom: var(--block-space);
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    color: #fff;
+}
+
+.block h2 
+{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.block span 
+{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#kitchen-area 
+{
+    background-color: #CDD01B;
+}
+
+#pickup-area
+{
+    background-color: #6CCD49;
+}
+
+#dining-area 
+{
+    background-color: #4986CD;
+}
