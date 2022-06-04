@@ -117,23 +117,28 @@ class OrderTaker
     takeOrders()
     {
         const orderAreaNewOrder = document.getElementById('order-area-new-order');
+        let orderTakerBusy = false;
 
         const loop = setInterval(() => {
                 if (simulation.on)
                 {
-                            if (this.queue.length > 0)
-                            {
-                                this.queue[0].taskPhase = "Completed";
-                                this.queue.shift();
-                                this.newOrderNumber++;
-                                orderAreaNewOrder.textContent = `new order: #${this.newOrderNumber}`;
-                            }
+                    if (orderTakerBusy === false && this.queue.length > 0)
+                    {
+                        orderTakerBusy = true;
+                        setTimeout(() => {
+                            this.queue[0].taskPhase = "Completed";
+                            this.queue.shift();
+                            this.newOrderNumber++;
+                            orderAreaNewOrder.textContent = `new order: #${this.newOrderNumber}`;
+                            orderTakerBusy = false;
+                        }, 30)
+                    }
                 }
                 else 
                 {
                     clearInterval(loop);
                 }
-            }, 5000)
+            }, 0)
     }
 }
 
